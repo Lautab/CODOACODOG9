@@ -67,7 +67,30 @@ body {
 	line-height: normal;
 }
 
+@keyframes mostrar {
+	0% {
+		display: block;
+		display: flex;
+		filter: opacity(0);
+	}
+	100% {
+		filter: opacity(1);
+	}
+}
+
+@keyframes ocultar {
+	0% {
+		display: block;
+		filter: opacity(1);
+	}
+	100% {
+		filter: opacity(0);
+		display: none;
+	}
+}
+
 main {
+	animation: mostrar 1s linear 0s 1 forwards normal;
 	flex-grow: 1;
 }
 

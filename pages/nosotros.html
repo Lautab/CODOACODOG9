@@ -12,10 +12,9 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="../css/nosotros.css" rel="stylesheet">
     <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/nosotros.css" rel="stylesheet">
 
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
 </head>
 
 <body>
@@ -70,8 +69,8 @@
         <h1 class="title-nosotros">Nosotros</h1>
         <section class="container-nosotros">
 
-            <section class="carousel-container">
-                <div id="carouselExampleIndicators" class="carousel slide">
+            <section class="carousel-container carousel-nosotros">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-dark h-100 w-100">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -79,20 +78,29 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
                     </div>
-                    <div id="imagen" class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/veterinaria.jpg" class="d-block w-100" class="imagen" alt="mascotas1">
+                    <div id="imagen" class="carousel-inner h-100 w-100 d-flex justify-content-center">
+                        <div class="h-100">
+                            <div class="carousel-item active h-100 w-100">
+                                <img src="../assets/veterinaria.jpg" class="h-100 img-fluid object-fit-contain"
+                                    alt="mascotas1">
+                            </div>
+                            <div class="carousel-item h-100 w-100">
+                                <img src="../assets/veterinaria2.jpg" class="h-100 img-fluid object-fit-contain"
+                                    alt="mascotas2">
+                            </div>
+                            <div class="carousel-item h-100 w-100">
+                                <img src="../assets/veterinaria3.jpg" class="h-100 img-fluid object-fit-contain"
+                                    alt="mascotas3">
+                            </div>
+                            <div class="carousel-item h-100 w-100">
+                                <img src="../assets/veterinaria4.jpg" class="h-100 img-fluid object-fit-contain"
+                                    alt="mascotas4">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../assets/veterinaria4 (2).jpg" class="d-block w-100 " alt="mascotas2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/veterinaria3.jpg" class="d-block w-100" alt="mascotas3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/veterinaria5 (3).jpg" class="d-block w-100" alt="mascotas4">
-                        </div>
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="prev">
@@ -110,19 +118,19 @@
 
             <section class="contenido-container">
                 <article id="historia">
-                    <h2>Nuestra Historia</h2>
+                    <h2 class="subtitle-nosotros">Nuestra Historia</h2>
                     <p>Somos una clínica fundada en 2005 por el Dr. Juan Pérez. Desde entonces, hemos estado
                         comprometidos
                         con
                         el bienestar de las mascotas.</p>
                 </article>
                 <article id="equipo">
-                    <h2>Nuestro Equipo</h2>
+                    <h2 class="subtitle-nosotros">Nuestro Equipo</h2>
                     <p>Nuestro equipo está formado por veterinarios apasionados, asistentes dedicados y amantes de los
                         animales.</p>
                 </article>
                 <article id="valores">
-                    <h2>Nuestros Valores</h2>
+                    <h2 class="subtitle-nosotros">Nuestros Valores</h2>
                     <p>Creemos en el cuidado compasivo, la atención personalizada y la excelencia en el tratamiento de
                         cada
                         paciente.</p>

@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -16,7 +18,7 @@ main {
 }
 
 form {
-    padding: 20px 50px;
+    padding: 20px 20px 20px 40px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -29,11 +31,6 @@ form {
     font-size: 15px;
     text-align: center;    
 }
-
-input {
-
-}
-
 
 
 .clinicaVeterinaria { 
@@ -55,26 +52,15 @@ input {
     --font-family-mont: "Montserrat", sans-serif;   
 */
 
-.clinicaVeterinaria h1{
+main h1{
     font-family: var(--font-family-sans); 
     color: #001f38;
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
 }
 
-.clinicaVeterinaria ul {
-    width: 40% ;
-    list-style-type: none; 
-    text-align: center; 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
-.clinicaVeterinaria li {   
-    list-style-type: initial;
-    display: inline;
-    margin: 0px;
-    padding: 10px;
-}
 
 .clinicaVeterinaria li a {
     text-decoration: none; 
@@ -86,10 +72,11 @@ input {
 }
 
 .turnosOnline{
+    height: 400px;
     padding: 0px 25px;
-    display: flex;
     margin-bottom: 30vh;
     margin-top: 5vh;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -97,14 +84,14 @@ input {
 .turnosOnline h2{
     background-image: url(../assets/bo_fon.png);
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 40%;
     font-family: var(--font-family-sans);
+    font-size: 40px;
+    color: #001f38;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #001f38;
-    font-size: 40px;
 }
 
 .turnosOnline form{
@@ -112,7 +99,7 @@ input {
     align-items: center;
     justify-content: space-between;
     background-color: #228adf;
-    height: 300px;
+    height:100%;
     width: 60%;
     flex-direction: row;
 }
@@ -120,10 +107,9 @@ input {
 .turnosOnline_form_uno{
     display: flex;
     width: 80%;
-    height: 100%;
+    height: 90%;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
     gap: 10px   ;
 }
 
@@ -152,6 +138,16 @@ input {
     font-family: var(--font-family-mont);
 }
 
+.turnosOnline_buttons{
+    width: 20%;
+    position: absolute;
+    right: -1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .button_border{
     background-color: white;
     width: 80px;
@@ -178,6 +174,12 @@ input {
     transform: translateX(10px);
 }
 
+.buttons_dos{
+    display: none;
+    flex-direction: column;
+    gap: 10px   ;
+}
+
 @keyframes mostrar {
     0%{
         display: block;
@@ -191,7 +193,6 @@ input {
 
 @keyframes ocultar {
     0%{
-        display: block;
         filter: opacity(1);
     }
     100%{
@@ -204,12 +205,37 @@ input {
 main{
     animation: mostrar 1s linear 0s 1 forwards normal;
 }
-.mascota_info{
+.turnosOnline_form_dos{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    gap: 10px;
     display: none;
+}
+
+.turnosOnline_form_dos  div{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    gap: 5px    ;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input_box_modificada{
+    padding: 10px;
+    font-family: var(--font-family-mont);
+    outline: none;
+}
+.input_box_modificada option{
+    padding: 10px;
 }
 
 .mostrar{
     animation: mostrar 1s linear 0s 1 forwards normal;
+    display: flex;
 }
 .ocultar{
     animation: ocultar 1s linear 0s 1 forwards normal;

@@ -16,7 +16,7 @@
 
 <body>
     <header class="header__">
-        <div class="search__main">  
+        <div class="search__main">
             <div class="search__container">
                 <input class="search__input" type="text" placeholder="Buscar"><span class="search__icon">
                     <i class="fa-solid fa-magnifying-glass"></i></span>
@@ -62,22 +62,17 @@
 
 
     <main>
-        <div class="clinicaVeterinaria">
             <h1>Clinica Veterinaria</h1>
-            <ul>
-                <li><a href="#turnosOnline">Turnos online</a></li>
-                <li><a href="#Consultas">Consultas</a></li>
-            </ul>
+        <div hidden class="informaciónTurnos">
+            <p>En nuestra Exclusiva Clìnica Veterinaria contamos con los mejores Especialistas, nuestros Mèdicos
+                Veterinarios cuentan con un gran profesionalismo, con una formación académica de calidad; para
+                ofrecerles las herramientas necesarias para cuidar de tus mascotas.</p>
         </div>
-        
-        <div hidden class="informaciónTurnos">     
-            <p>En nuestra Exclusiva Clìnica Veterinaria contamos con los mejores Especialistas, nuestros Mèdicos Veterinarios cuentan con un gran profesionalismo, con una formación académica de calidad; para ofrecerles las herramientas necesarias para cuidar de tus mascotas.</p>
-        </div>  
-     
+
         <section class="turnosOnline">
             <h2>Turnos Online</h2>
             <form method="">
-                <div class="turnosOnline_form_uno" id="containerFormUno">
+                <div class="turnosOnline_form_uno mostrar" id="containerFormUno">
                     <div>
                         <p>Para solicitar un turno deberá rellenar los siguentes campos.</p>
                     </div>
@@ -86,12 +81,12 @@
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" placeholder="Intruduzca su nombre" size="18" maxlength="30">
                     </div>
-                        
+
                     <div>
                         <label for="Apellido">Apellido:</label>
                         <input type="text" id="Apellido" placeholder="Intruduzca su Apellido" size="18" maxlength="30">
                     </div>
-                    
+
                     <div>
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" placeholder="Intruduzca su telefono" size="17" maxlength="15">
@@ -99,41 +94,64 @@
 
                     <div>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Intruduzca su Correo electrònico" size="35" maxlength="35">
+                        <input type="email" id="email" placeholder="Intruduzca su Correo electrònico" size="35"
+                            maxlength="35">
                     </div>
-                        
-                </div>
-                <div id="butSeguir" class="button_border">
-                    <div class="button_background">
-                        <img src="../assets/flechaICON.png" alt="Siguiente" class="form_button">
-                    </div>
-                </div>
-                <div class="mascota_info" id="containerFormDos">
 
-                    <H3>Seleccione Su Mascota</H3>
-                    <input type="radio" name="Mascota" value="2">Gato<br>
-                    <input type="radio" name="Mascota" value="2">Perro<br>
-                    <h3>Seleccione el Especialista</h3>
-                    <select name="Medicos Especialistas" id="medicosEspecialistas">
-                        <option value="1">Dr. Perez</option>
-                        <option value="2">Dr. Godoy</option>
-                    </select>
-                    <h3>Seleccione su Turno</h3>
-                    <input type="date" name="dia" id="dia" step="3">
-                    <input type="time" value="09:00" min="09:00" max="12:00"><br>
-                    <button>Aceptar</button>
                 </div>
-                </form>
+                <div class="turnosOnline_form_dos " id="containerFormDos">
+                    <div>
+                        <H3>Seleccione Su Mascota</H3>
+                        <label for="gato">Gato <input type="radio" id="gato" name="Mascota" value="gato"></label>
+                        <label for="perro">Perro
+                            <input type="radio" name="Mascota" value="perro"></label>
+                    </div>
+                    <div>
+
+                        <h3>Seleccione el Especialista</h3>
+                        <select class="input_box_modificada" name="Medicos Especialistas" id="medicosEspecialistas">
+                            <option value="1">Dr. Perez</option>
+                            <option value="2">Dr. Godoy</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Seleccione su Turno</h3>
+                        <input class="input_box_modificada" type="date" name="dia" id="dia" step="3">
+                        <input class="input_box_modificada" type="time" value="09:00" min="09:00" max="15:00">
+                    </div>
+                </div>
+                <div class="turnosOnline_buttons">
+                    <div title="Siguiente" id="butSeguir" class="button_border">
+                        <div class="button_background">
+                            <img src="../assets/flechaICON.png" alt="Siguiente" class="form_button">
+                        </div>
+                    </div>  
+                    <div class="buttons_dos ocultar" id="containerButtons">
+                        <div title="Enviar" id="butEnviar" class="button_border">
+                            <div class="button_background">
+                                <img src="../assets/flechaICON.png" alt="Siguiente" class="form_button">
+                            </div>
+                        </div> 
+                        <div title="Volver" id="butVolver" class="button_border">
+                            <div class="button_background">
+                                <img style="transform: rotateZ(180deg);" src="../assets/flechaICON.png" alt="Siguiente" class="form_button">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+            </form>
         </section>
 
 
 
         <section hidden class="Consultas">
             <h2>Consultas</h2>
-            <p>Si tienes una consulta sobre los servicios de nuestra exclusiva Clinica Veterinaria no dudes en escribirnos</p>
+            <p>Si tienes una consulta sobre los servicios de nuestra exclusiva Clinica Veterinaria no dudes en
+                escribirnos</p>
             <textarea name="Consultas" id="Consultas" rows="10" cols="30">Dejanos tu consulta...</textarea><br>
             <button>Enviar</button>
-        </section>               
+        </section>
 
     </main>
 

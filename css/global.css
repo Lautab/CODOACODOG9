@@ -50,6 +50,8 @@
 	box-sizing: border-box;
 }
 
+
+
 html {
 	height: 100%;
 	font-size: var(--font-base);
@@ -62,6 +64,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: var(--font-family-sans);
+	line-height: normal;
 }
 
 main {

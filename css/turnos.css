@@ -1,53 +1,34 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    background-color: white;   
-}
-   
-
-
 main {
-    background-color: whitesmoke;
-    background-position: center;
-    background-size: contain;
-    margin: 0px;
-    display:flex;
-    flex-direction: column;
+	background-color: whitesmoke;
+	background-position: center;
+	background-size: contain;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
 }
 
 form {
-    padding: 20px 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 20px 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+	font-size: 30px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-::-webkit-input-placeholder {color: gray; 
-    font-size: 15px;
-    text-align: center;    
-}
-
-input {
-
-}
-
-
-
-.clinicaVeterinaria { 
-    font-family: var(--font-family-mont); 
-    background-position: center;
-    background-size: contain;
-    color: rgb(0, 0, 0); 
-    text-align: center; 
-    padding: 5px;
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.clinicaVeterinaria {
+	font-family: var(--font-family-mont);
+	background-position: center;
+	background-size: contain;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 5px;
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /*
@@ -55,162 +36,167 @@ input {
     --font-family-mont: "Montserrat", sans-serif;   
 */
 
-.clinicaVeterinaria h1{
-    font-family: var(--font-family-sans); 
-    color: #001f38;
+.clinicaVeterinaria h1 {
+	font-family: var(--font-family-sans);
+	color: #001f38;
 }
 
 .clinicaVeterinaria ul {
-    width: 40% ;
-    list-style-type: none; 
-    text-align: center; 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+	width: 40%;
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.clinicaVeterinaria li {   
-    list-style-type: initial;
-    display: inline;
-    margin: 0px;
-    padding: 10px;
+.clinicaVeterinaria li {
+	list-style-type: initial;
+	display: inline;
+	margin: 0px;
+	padding: 10px;
 }
 
 .clinicaVeterinaria li a {
-    text-decoration: none; 
-    color: rgb(45, 35, 132); 
+	text-decoration: none;
+	color: rgb(45, 35, 132);
 }
 
 .clinicaVeterinaria li a:hover {
-    color: rgb(196, 28, 202);
+	color: rgb(196, 28, 202);
 }
 
-.turnosOnline{
-    padding: 0px 25px;
-    display: flex;
-    margin-bottom: 30vh;
-    margin-top: 5vh;
-    align-items: center;
-    justify-content: center;
+.turnosOnline {
+	padding: 0px 25px;
+	display: flex;
+	margin-bottom: 30vh;
+	margin-top: 5vh;
+	align-items: center;
+	justify-content: center;
 }
 
-.turnosOnline h2{
-    background-image: url(../assets/bo_fon.png);
-    background-size: cover;
-    height: 300px;
-    width: 40%;
-    font-family: var(--font-family-sans);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #001f38;
-    font-size: 40px;
+.turnosOnline h2 {
+	background-image: url(../assets/bo_fon.png);
+	background-size: cover;
+	height: 300px;
+	width: 40%;
+	font-family: var(--font-family-sans);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #001f38;
+	font-size: 40px;
 }
 
-.turnosOnline form{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #228adf;
-    height: 300px;
-    width: 60%;
-    flex-direction: row;
+.turnosOnline form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #228adf;
+	height: 300px;
+	width: 60%;
+	flex-direction: row;
 }
 
-.turnosOnline_form_uno{
-    display: flex;
-    width: 80%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    gap: 10px   ;
+.turnosOnline_form_uno {
+	display: flex;
+	width: 80%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: left;
+	gap: 10px;
 }
 
-.turnosOnline_form_uno div{
-    font-size: 18px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.turnosOnline_form_uno div {
+	font-size: 18px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.turnosOnline_form_uno label{
-    width: 20% ;
+.turnosOnline_form_uno label {
+	width: 20%;
 }
 
-.turnosOnline_form_uno input{
-    background-color: white;
-    outline: none;
-    border: 1px solid #001f38;
-    font-family: var(--font-family-mont);
-    width: 40%;
-    padding: 10px;
+.turnosOnline_form_uno input {
+	background-color: white;
+	outline: none;
+	border: 1px solid #001f38;
+	font-family: var(--font-family-mont);
+	width: 40%;
+	padding: 10px;
 }
 
-.turnosOnline form{
-    font-family: var(--font-family-mont);
+.turnosOnline_form_uno input::-webkit-input-placeholder {
+	color: gray;
+	font-size: 15px;
+	text-align: center;
 }
 
-.button_border{
-    background-color: white;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.button_background{
-    background-color: #228adf;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.turnosOnline form {
+	font-family: var(--font-family-mont);
 }
 
-.button_border{
-    transition: 0.4s;
+.button_border {
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.button_border:hover{
-    transform: translateX(10px);
+.button_background {
+	background-color: #228adf;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button_border {
+	transition: 0.4s;
+}
+.button_border:hover {
+	transform: translateX(10px);
 }
 
 @keyframes mostrar {
-    0%{
-        display: block;
-        display: flex;
-        filter: opacity(0);
-    }
-    100%{
-        filter: opacity(1);
-    }
+	0% {
+		display: block;
+		display: flex;
+		filter: opacity(0);
+	}
+	100% {
+		filter: opacity(1);
+	}
 }
 
 @keyframes ocultar {
-    0%{
-        display: block;
-        filter: opacity(1);
-    }
-    100%{
-        filter: opacity(0);
-        display: none;
-    }
+	0% {
+		display: block;
+		filter: opacity(1);
+	}
+	100% {
+		filter: opacity(0);
+		display: none;
+	}
 }
 
+main {
+	animation: mostrar 1s linear 0s 1 forwards normal;
+}
+.mascota_info {
+	display: none;
+}
 
-main{
-    animation: mostrar 1s linear 0s 1 forwards normal;
+.mostrar {
+	animation: mostrar 1s linear 0s 1 forwards normal;
 }
-.mascota_info{
-    display: none;
-}
-
-.mostrar{
-    animation: mostrar 1s linear 0s 1 forwards normal;
-}
-.ocultar{
-    animation: ocultar 1s linear 0s 1 forwards normal;
+.ocultar {
+	animation: ocultar 1s linear 0s 1 forwards normal;
 }

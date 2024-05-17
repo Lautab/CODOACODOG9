@@ -1,14 +1,43 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    background-color: rgb(181, 223, 226);   
+:root {
+	--font-family-sans: "DM Sans", sans-serif;
+	--font-family-mont: "Montserrat", sans-serif;
 }
-#imagen img {
+
+.main-nosotros {
+	background-color: rgb(181, 223, 226);
+	font-family: var(--font-family-sans);
+}
+
+.title-nosotros {
+	text-align: center;
+}
+
+header {
+    box-sizing: border-box;
+}
+
+input {
+	padding: 0;
+	line-height: 0%;
+	font-family: var(--font-family-sans);
+	font-size: 12px;
+}
+
+ul {
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+/* .container-nosotros {
+    display: flex;
+} */
+
+.carousel-container {
+}
+
+/* #imagen img {
     width: 250px;
     height: 600px;
     padding: 30px;
     margin: 10px;
-    
-}
-    
-
+} */

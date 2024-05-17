@@ -3,10 +3,12 @@ body {
     padding: 0px;
     background-color: rgb(181, 223, 226);   
 }
-img.imagen {
-
-    width: 350px;
-    height: 250px;
+#imagen img {
+    width: 250px;
+    height: 600px;
+    padding: 30px;
+    margin: 10px;
+    
 }
     
 

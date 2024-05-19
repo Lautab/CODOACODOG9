@@ -50,6 +50,8 @@
 	box-sizing: border-box;
 }
 
+
+
 html {
 	height: 100%;
 	font-size: var(--font-base);
@@ -62,9 +64,33 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: var(--font-family-sans);
+	line-height: normal;
+}
+
+@keyframes mostrar {
+	0% {
+		display: block;
+		display: flex;
+		filter: opacity(0);
+	}
+	100% {
+		filter: opacity(1);
+	}
+}
+
+@keyframes ocultar {
+	0% {
+		display: block;
+		filter: opacity(1);
+	}
+	100% {
+		filter: opacity(0);
+		display: none;
+	}
 }
 
 main {
+	animation: mostrar 1s linear 0s 1 forwards normal;
 	flex-grow: 1;
 }
 

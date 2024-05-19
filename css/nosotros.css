@@ -1,14 +1,79 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    background-color: rgb(181, 223, 226);   
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Poppins:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	--font-family-sans: "DM Sans", sans-serif;
+	--font-family-mont: "Montserrat", sans-serif;
 }
-#imagen img {
+
+input {
+	padding: 0;
+	line-height: 0%;
+	font-family: var(--font-family-sans);
+	font-size: 12px;
+}
+
+ul {
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.main-nosotros {
+	background-color: rgb(181, 223, 226);
+	font-family: var(--font-family-sans);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.title-nosotros {
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.subtitle-nosotros {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.container-nosotros {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.carousel-container {
+	flex: 1;
+	width: 100%;
+	height: 360px;
+	padding: 8px;
+	min-width: 300px;
+}
+
+.carousel-nosotros {
+	background-color: rgb(71, 4, 255);
+}
+
+.contenido-container {
+	flex: 1;
+	padding: 20px 8px;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.contenido-container p {
+	font-size: 1rem;
+	text-align: center;
+}
+
+/* #imagen img {
     width: 250px;
     height: 600px;
     padding: 30px;
     margin: 10px;
-    
-}
-    
-
+} */

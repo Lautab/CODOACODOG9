@@ -63,15 +63,16 @@
 
     <main>
             <h1>Clinica Veterinaria</h1>
-        <div hidden class="informaciónTurnos">
+        <div class="info_turnos">
             <p>En nuestra Exclusiva Clìnica Veterinaria contamos con los mejores Especialistas, nuestros Mèdicos
                 Veterinarios cuentan con un gran profesionalismo, con una formación académica de calidad; para
                 ofrecerles las herramientas necesarias para cuidar de tus mascotas.</p>
+            <p>Los horarios de consulta son de Lunes a Viernes de 9:00 a 16:00 horas. Nos ubicamos en Avenida Siempre Viva 312. En caso de emergencias tenemos una guardia dentro del horario anteriormente informado.</p>
         </div>
 
         <section class="turnosOnline">
             <h2>Turnos Online</h2>
-            <form method="">
+            <form method="" id="formTurnos">
                 <div class="turnosOnline_form_uno mostrar" id="containerFormUno">
                     <div>
                         <p>Para solicitar un turno deberá rellenar los siguentes campos.</p>
@@ -79,27 +80,27 @@
                     <div>
 
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Intruduzca su nombre" size="18" maxlength="30">
+                        <input type="text" name="nombre" id="nombre" placeholder="Intruduzca su nombre" size="18" maxlength="30">
                     </div>
 
                     <div>
                         <label for="Apellido">Apellido:</label>
-                        <input type="text" id="Apellido" placeholder="Intruduzca su Apellido" size="18" maxlength="30">
+                        <input name="apellido" type="text" id="Apellido" placeholder="Intruduzca su Apellido" size="18" maxlength="30">
                     </div>
 
                     <div>
                         <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" placeholder="Intruduzca su telefono" size="17" maxlength="15">
+                        <input type="tel" name="tel" id="telefono" placeholder="Intruduzca su telefono" size="17" maxlength="15">
                     </div>
 
                     <div>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Intruduzca su Correo electrònico" size="35"
+                        <input type="email" name="mail" id="email" placeholder="Intruduzca su Correo electrònico" size="35"
                             maxlength="35">
                     </div>
 
                 </div>
-                <div class="turnosOnline_form_dos " id="containerFormDos">
+                <div class="turnosOnline_form_dos oculto " id="containerFormDos">
                     <div>
                         <H3>Seleccione Su Mascota</H3>
                         <label for="gato">Gato <input type="radio" id="gato" name="Mascota" value="gato"></label>
@@ -110,23 +111,41 @@
 
                         <h3>Seleccione el Especialista</h3>
                         <select class="input_box_modificada" name="Medicos Especialistas" id="medicosEspecialistas">
-                            <option value="1">Dr. Perez</option>
-                            <option value="2">Dr. Godoy</option>
+                            <option value="Dr.Perez">Dr. Perez</option>
+                            <option value="Dr.Godoy">Dr. Godoy</option>
                         </select>
                     </div>
                     <div>
                         <h3>Seleccione su Turno</h3>
-                        <input class="input_box_modificada" type="date" name="dia" id="dia" step="3">
-                        <input class="input_box_modificada" type="time" value="09:00" min="09:00" max="15:00">
+                        <input class="input_box_modificada" type="date" name="fecha" id="dia" step="3">
+                        <input class="input_box_modificada" type="time" name="hora" value="09:00" minlength="09:00" max="16:00">
                     </div>
                 </div>
-                <div class="turnosOnline_buttons">
-                    <div title="Siguiente" id="butSeguir" class="button_border">
+                <div class="turnosOnline_form_tres oculto " id="containerFormTres">
+                    <h4>Petición de turno</h4>
+                    <div>
+                        <p class="titulo">Este es el turno que va solicitar:</p>
+                        <ul>
+                            <li>Fecha: <span id="form_tres_fecha"></span></li>
+                            <li>Horario: <span id="form_tres_hora"></span></li>
+                            <li>Teléfono: <span id="form_tres_tel"></span></li>
+                            <li>Email: <span id="form_tres_mail"></span></li>
+                        </ul>
+                    </div>
+                    <p class="mensaje_tres">¿Desea enviar la solicitud?</p>
+                </div>
+                <div class="turnosOnline_form_cuatro oculto " id="containerFormCuatro">
+                    <h4>Su solicitud fue enviada</h4>
+                    <p class="mensaje_tres">Pronto nos pondremos en contacto con usted para informarle el estado de su solicitud.</p>
+                    <p>¡Gracias por elegirnos!</p>
+                </div>
+                <div class="turnosOnline_buttons ">
+                    <div title="Siguiente" id="butSeguir" class="button_border mostrar">
                         <div class="button_background">
                             <img src="../assets/flechaICON.png" alt="Siguiente" class="form_button">
                         </div>
                     </div>  
-                    <div class="buttons_dos ocultar" id="containerButtons">
+                    <div class="buttons_dos oculto" id="containerButtons">
                         <div title="Enviar" id="butEnviar" class="button_border">
                             <div class="button_background">
                                 <img src="../assets/flechaICON.png" alt="Siguiente" class="form_button">
@@ -141,16 +160,6 @@
                 </div>
 
             </form>
-        </section>
-
-
-
-        <section hidden class="Consultas">
-            <h2>Consultas</h2>
-            <p>Si tienes una consulta sobre los servicios de nuestra exclusiva Clinica Veterinaria no dudes en
-                escribirnos</p>
-            <textarea name="Consultas" id="Consultas" rows="10" cols="30">Dejanos tu consulta...</textarea><br>
-            <button>Enviar</button>
         </section>
 
     </main>

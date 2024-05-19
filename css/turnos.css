@@ -1,7 +1,6 @@
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     background-color: white;   
 }
@@ -27,10 +26,6 @@ form {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-::-webkit-input-placeholder {color: gray; 
-    font-size: 15px;
-    text-align: center;    
-}
 
 
 .clinicaVeterinaria { 
@@ -61,14 +56,18 @@ main h1{
 }
 
 
-
-.clinicaVeterinaria li a {
-    text-decoration: none; 
-    color: rgb(45, 35, 132); 
+.info_turnos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+    padding: 0px 25px;
+	margin: auto;
 }
-
-.clinicaVeterinaria li a:hover {
-    color: rgb(196, 28, 202);
+.info_turnos > p{
+	padding: 15px 60px;
+	width: 100%;
+	background-color: #228adf;
 }
 
 .turnosOnline{
@@ -175,7 +174,7 @@ main h1{
 }
 
 .buttons_dos{
-    display: none;
+	display: flex;
     flex-direction: column;
     gap: 10px   ;
 }
@@ -212,7 +211,7 @@ main{
     justify-content: space-around;
     height: 90%;
     gap: 10px;
-    display: none;
+
 }
 
 .turnosOnline_form_dos  div{
@@ -233,10 +232,56 @@ main{
     padding: 10px;
 }
 
+.turnosOnline_form_tres{
+	color: white;
+	width: 80%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 50px;
+	gap: 20px;
+}
+
+.turnosOnline_form_tres div {
+	font-size: 18px;
+}
+
+.titulo{
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.turnosOnline_form_tres div ul{
+	list-style-type: none;
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	margin-top: 7px;
+}
+
+.mensaje_tres{
+	font-size: 20px;
+	font-weight: 600px	;
+}
+
+.turnosOnline_form_cuatro{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	gap: 10px	;
+}
+
 .mostrar{
     animation: mostrar 1s linear 0s 1 forwards normal;
     display: flex;
 }
 .ocultar{
     animation: ocultar 1s linear 0s 1 forwards normal;
+}
+
+.oculto{
+	display: none;
 }

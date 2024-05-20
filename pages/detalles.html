@@ -16,7 +16,7 @@
 
 <body>
     <header class="header__">
-        <div class="search__main">  
+        <div class="search__main">
             <div class="search__container">
                 <input class="search__input" type="text" placeholder="Buscar"><span class="search__icon">
                     <i class="fa-solid fa-magnifying-glass"></i></span>
@@ -59,10 +59,60 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
-        <!-- Aqui el contenido: crear otra  -->
-        <h1>Detalles</h1>
+        <div class="border">
+            <section>
+                <div class="img_main">
+                    <img id="img_main" src="" alt="">
+                </div>
+                <ul class="img_todas" id="container_img">
+                </ul>
+
+            </section>
+            <aside>
+                <h2>Shampoo Perro</h2>
+                <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione excepturi
+                    inventore officiis
+                    accusantium provident saepe, pariatur numquam dolorem ex autem odio fugiat adipisci tempore modi
+                    architecto recusandae quidem blanditiis ipsa?</p>
+                <form action="">
+                    <div class="opciones-container">
+                        <h3>Color</h3>
+                        <div class="opt-color-container" id="opt-color-container">
+
+                            <label class="color-elegido" for="Rojo">ALGO <input type="checkbox" name="color"
+                                    value="Rojo" id="Rojo"></label>
+                            <label for="Verde">OTRA <input type="checkbox" name="color" value="Rojo" id="Verde"></label>
+                        </div>
+                    </div>
+                    <!-- <div class="opciones-container">
+                        <h3>Tamaño</h3>
+                        <div class="opt-color-container" id="opt-color-container">
+
+                            <label class="color-elegido" for="Pequeño">Pequeño <input type="checkbox" name="color"
+                                    value="Pequeño" id="Pequeño"></label>
+                            <label for="Grande">Grande <input type="checkbox" name="color" value="Grande"
+                                    id="Grande"></label>
+                        </div>
+
+                    </div>
+                    <div class="opciones-container">
+                        <h3>Kilogramos</h3>
+                        <div class="opt-color-container" id="opt-color-container">
+
+                            <label class="color-elegido" for="Pequeño">1.5 Kg <input type="checkbox" name="color"
+                                    value="Pequeño" id="Pequeño"></label>
+                            <label for="Grande">15 Kg <input type="checkbox" name="color" value="Grande"
+                                    id="Grande"></label>
+                        </div> -->
+                        <div class="precio-compra">
+                            <p>Precio: $<span id="precio">2000</span></p>
+                            <input value="Agregar al carrito" type="submit">
+                        </div>
+                </form>
+            </aside>
+        </div>
     </main>
 
 
@@ -128,7 +178,9 @@
         </div>
     </footer>
 
+
     <script src="../js/global.js"></script>
+    <script src="../js/detalles.js"></script>
 </body>
 
 

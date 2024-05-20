@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20vh 20px;
+}
+
+section{
+    display: flex;
+    width: 50%; 
+    border-right: none;
+    align-items: center;
+}
+
+section .img_main{
+    width: 65%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .img_main img{
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+section .img_todas{
+    height: 440px;
+    width: fit-content;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    overflow-y: scroll;
+    padding-top: 60px;
+    padding-right: 20px;
+}
+
+section .img_todas li{
+    height: fit-content;        
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .img_todas li img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.img_elegida {
+    border: 0.1vw solid #228adf55;
+}
+
+aside{
+    height: 502px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+aside h2{
+    color: #228adf;
+    font-family: var(--font-family-sans);
+    height: 10%;
+}
+
+aside p.descripcion{
+    width: 95%;
+    height: 20%;
+    overflow-y: scroll;
+}
+
+aside form{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside form .opciones-container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 10px;
+}
+
+aside form .opciones-container input{
+
+}
+
+aside form .opciones-container label{
+    border: 1px solid #a09e9e;
+    padding: 10px;
+    width: fit-content;
+    font-family: var(--font-family-mont);
+    color: #a09e9e;
+}
+
+.color-elegido{
+    border: 1px solid #228adf !important;
+    color: #228adf !important; 
+}
+
+.opt-color-container{
+    display: flex;
+    gap: 10px   ;
+}
+
+.precio-compra{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 40px 15px 0px;
+    gap: 20px;
+    justify-self: last baseline;
+}
+
+.precio-compra p{
+    font-family: var(--font-family-sans);
+    font-size: 22px;
+    font-weight: bold;
+}
+.precio-compra input{
+    font-family: var(--font-family-mont);
+    font-size: 16px;
+    background-color: #228adf;
+    padding: 16px 12px;
+    outline: none;
+    border: 1px solid #228adf;
+    color: white;
+    font-weight: bold;
+}
+
+.border{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #228adf1f;
+}
+
+

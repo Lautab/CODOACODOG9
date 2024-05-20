@@ -134,6 +134,8 @@
 
 .header-card img {
 	width: 100%;
+	background-color: white;
+	object-fit: contain;
 	border-radius:0 60px 0 60px;
 }
 
@@ -151,6 +153,10 @@
 	color: white;
 	color: #dfdbdb;
 	padding: 4px 0;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .body-card h3 {
 	color: #dfdbdb;
@@ -172,9 +178,9 @@
 	margin-bottom: 20px;
 }
 
-.footer-card a {
+.footer-card button {
 	font-size: 18px;
-	padding: 8px;
+	padding: 12px;
 	border-radius: 10px;
 	background-color: #000000;
 	border: none;

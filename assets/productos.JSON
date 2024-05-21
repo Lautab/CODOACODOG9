@@ -5,7 +5,7 @@
         "name": "Collar para perro",
         "desc": "Collar de colocación rápida para perros regulable. El collar mas vendido por su calidad, estética y funciones. Uso típico: Paseo e identificación (chapita).",
         "opt": {"color":["Rojo","Azul","Verde"], "size":["Pequeño","Mediano","Grande"]},
-        "price": 5099,
+        "price": ["5.099"],
         "img": ["collarPerro.png","collarPerro2.png","collarPerro3.png","collarPerro4.png"],
         "category": "Accesorios"
     },  
@@ -15,7 +15,7 @@
         "name": "Collar Reflactante Para Gato Con Porta Airtag",
         "desc": "El collar para gatos Air Tag está hecho de nylon bien cosido que protegerá el cuello de tu gato de la irritación cuando está activo. La hebilla ANTIAHORQUE de liberación rápida del collar separable está hecha de plástico resistente de primera calidad y se puede liberar rápidamente con una sola mano.",
         "opt": {"color":["Negro","Blanco"], "size":["Pequeño","Grande"]},
-        "price": 6000,
+        "price": ["6.000"],
         "img":["collarGato.png","collarGato2.png","collarGato3.png"],
         "category": "Accesorios"
     },
@@ -25,7 +25,7 @@
         "name": "Alimento Dog Selection Criadores",
         "desc": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Dog Selection podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
         "opt": {"kg": [1.5,15,21,24], "sabor":["Carne/Pollo", "Carne/Vegetales", "Mix"]},
-        "price": [3400,20700,30050,41020],
+        "price": ["3.400","20.700","30.050","41.020"],
         "img":["comidaPerro.png","comidaPerro2.png","comidaPerro3.png"],
         "category": "Alimento"
     },
@@ -35,7 +35,7 @@
         "name": "Alimento Cat Chow Defense Plus Multiproteína",
         "desc": "Dale a tu gato adulto la nutrición que necesita con el alimento Cat Chow Defense Plus Multiproteína sabor carne en bolsa de 8 kg. Este alimento seco de Purina está especialmente formulado para satisfacer las necesidades de tu mascota en su etapa adulta.",
         "opt": {"kg": [8, 15], "sabor":["Carne", "Pescado", "Pollo"]},
-        "price": [30210,50040],
+        "price": ["30.210","50.040"],
         "img":["comidaGato.png","comidaGato2.png"],
         "category": "Alimento"
     }

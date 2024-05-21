@@ -46,10 +46,6 @@ main {
 	justify-content: center;
 }
 
-/*
-    --font-family-sans: "DM Sans", sans-serif;
-    --font-family-mont: "Montserrat", sans-serif;   
-*/
 
 .turnos-main h1 {
 	font-family: var(--font-family-sans);
@@ -366,7 +362,12 @@ main {
 		flex-direction: row-reverse;
 		justify-content: center;
 	}
-
+	.turnosOnline_buttons{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.turnosOnline_form_tres {
 		width: 100%;
 	}

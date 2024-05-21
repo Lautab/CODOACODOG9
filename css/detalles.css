@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 main{
     display: flex;
     align-items: center;
@@ -10,9 +12,11 @@ main{
 
 section{
     display: flex;
-    width: 50%; 
+    width: 55%; 
     border-right: none;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
 }
 
 section .img_main{
@@ -24,14 +28,14 @@ section .img_main{
 }
 
 section .img_main img{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     object-fit: contain;
 }
 
 section .img_todas{
     height: 440px;
-    width: fit-content;
+    width: 30%;
     gap: 5px;
     display: flex;
     flex-direction: column;
@@ -62,7 +66,9 @@ section .img_todas li img{
 }
 
 aside{
-    height: 502px;
+    height: fit-content;
+    min-height: 502px;
+    width: 45%;
     display: flex;
     flex-direction: column;
     padding-top: 80px;
@@ -95,10 +101,12 @@ aside form .opciones-container{
 }
 
 aside form .opciones-container input{
-
+    cursor: pointer;
+    display: none;
 }
 
 aside form .opciones-container label{
+    cursor: pointer;
     border: 1px solid #a09e9e;
     padding: 10px;
     width: fit-content;
@@ -106,12 +114,12 @@ aside form .opciones-container label{
     color: #a09e9e;
 }
 
-.color-elegido{
+.boton-elegido{
     border: 1px solid #228adf !important;
     color: #228adf !important; 
 }
 
-.opt-color-container{
+.opt-container{
     display: flex;
     gap: 10px   ;
 }
@@ -151,4 +159,115 @@ aside form .opciones-container label{
     border: 1px solid #228adf1f;
 }
 
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    
+}
 
+.modal p{
+    width: 450px;
+    height: 250px;
+    background-color: #228adf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-mont);
+    padding: 20px;
+    color: white;
+}
+
+
+.mostrar {
+	animation: mostrar 1s linear 0s 1 forwards normal;
+	display: flex;
+}
+.ocultar {
+	animation: ocultar 1s linear 0s 1 forwards normal;
+}
+
+.oculto {
+	display: none;
+}
+
+
+
+@keyframes mostrar {
+	0% {
+		display: block;
+		display: flex;
+		filter: opacity(0);
+	}
+	100% {
+		filter: opacity(1);
+	}
+}
+
+@keyframes ocultar {
+	0% {
+		filter: opacity(1);
+	}
+	100% {
+		filter: opacity(0);
+		display: none;
+	}
+}
+
+
+@media (max-width:950px) {
+    .precio-compra{
+        padding: 0 0 0 0;
+    }
+    section.img_main img{
+        width: 250px;
+        height: 250px;
+    }
+
+    section ul.img_todas{
+        overflow-x: hidden;
+    }
+}
+
+
+
+@media (max-width:786px) {
+    .precio-compra{
+        padding: 0 0 0 0;
+    }
+
+    div.border{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    section{
+        flex-direction: column;
+        width: 90%;
+        
+    }
+
+    section div.img_main{
+        width: 100%;
+        height: fit-content;
+    }
+
+    section ul.img_todas{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 10px 0;
+        height: fit-content;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    aside{
+        width: 80%;
+    }
+} 

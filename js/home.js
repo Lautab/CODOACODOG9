@@ -66,7 +66,7 @@ async function cargar_datos(){
         boton.addEventListener('click',(e)=>{
             e.preventDefault()
             let name_producto = e.target.id
-            setCookie('producto_buscado',name_producto, {secure : true, 'max-age': 10000})
+            setCookie('producto_buscado',name_producto, {secure : true})
             setTimeout(() => {
                 location.href = './pages/detalles.html' 
             }, 1000);

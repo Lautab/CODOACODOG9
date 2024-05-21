@@ -68,50 +68,26 @@
                 </div>
                 <ul class="img_todas" id="container_img">
                 </ul>
-
             </section>
             <aside>
-                <h2>Shampoo Perro</h2>
-                <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione excepturi
+                <h2 id="producto_titulo">Shampoo Perro</h2>
+                <p class="descripcion" id="producto_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione excepturi
                     inventore officiis
                     accusantium provident saepe, pariatur numquam dolorem ex autem odio fugiat adipisci tempore modi
                     architecto recusandae quidem blanditiis ipsa?</p>
-                <form action="">
-                    <div class="opciones-container">
-                        <h3>Color</h3>
-                        <div class="opt-color-container" id="opt-color-container">
-
-                            <label class="color-elegido" for="Rojo">ALGO <input type="checkbox" name="color"
-                                    value="Rojo" id="Rojo"></label>
-                            <label for="Verde">OTRA <input type="checkbox" name="color" value="Rojo" id="Verde"></label>
-                        </div>
+                <form action="POST" id="producto_formulario">
+                    <div id="producto_opc">
                     </div>
-                    <!-- <div class="opciones-container">
-                        <h3>Tamaño</h3>
-                        <div class="opt-color-container" id="opt-color-container">
-
-                            <label class="color-elegido" for="Pequeño">Pequeño <input type="checkbox" name="color"
-                                    value="Pequeño" id="Pequeño"></label>
-                            <label for="Grande">Grande <input type="checkbox" name="color" value="Grande"
-                                    id="Grande"></label>
-                        </div>
-
-                    </div>
-                    <div class="opciones-container">
-                        <h3>Kilogramos</h3>
-                        <div class="opt-color-container" id="opt-color-container">
-
-                            <label class="color-elegido" for="Pequeño">1.5 Kg <input type="checkbox" name="color"
-                                    value="Pequeño" id="Pequeño"></label>
-                            <label for="Grande">15 Kg <input type="checkbox" name="color" value="Grande"
-                                    id="Grande"></label>
-                        </div> -->
                         <div class="precio-compra">
-                            <p>Precio: $<span id="precio">2000</span></p>
-                            <input value="Agregar al carrito" type="submit">
+                            <input type="number" value="" name="precio" id="producto_precio_inv" readonly style="display: none;">
+                            <p>Precio: $<span id="producto_precio"></span></p>
+                            <input id=""  value="Agregar al carrito" type="submit">
                         </div>
                 </form>
             </aside>
+        </div>
+        <div class="modal oculto" id="modal">
+            <p>Su producto fue agregado al carrito correctamente</p>
         </div>
     </main>
 

@@ -35,6 +35,17 @@ function deleteCookie(name) {
     })
 }
 
+
+function mostrar(etiqueta) {
+    etiqueta.classList.remove("ocultar")
+    etiqueta.classList.remove('oculto')
+    etiqueta.classList.add('mostrar')
+}
+function ocultar(etiqueta) {
+    etiqueta.classList.add('ocultar')
+    etiqueta.classList.remove("mostrar")
+}
+
 async function cargar_datos() {
     await fetch('../assets/productos.JSON') 
         .then(resp => resp.json())
@@ -169,6 +180,13 @@ async function cargar_datos() {
 
         // COMO VOLVER A OBTENER LOS DATOS
         // JSON.parse(`{${getCookie('carrito')}}`)
+
+        // DISPLAY DE QUE SE SUMO AL CARRITO
+        const modal = document.getElementById('modal')
+        mostrar(modal)
+        setTimeout(() => {
+            ocultar(modal)
+        }, 2000);
     })
     
 

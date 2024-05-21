@@ -33,16 +33,16 @@ section .img_main img{
     object-fit: contain;
 }
 
-section .img_todas{
+section ul.img_todas{
     height: 440px;
     width: 30%;
-    gap: 5px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     overflow-y: scroll;
-    padding-top: 60px;
     padding-right: 20px;
 }
 
@@ -259,15 +259,60 @@ aside form .opciones-container label{
     section ul.img_todas{
         flex-direction: row;
         width: 100%;
-        align-items: center;
-        justify-content: center;
         padding: 0 0 10px 0;
         height: fit-content;
         overflow-x: scroll;
         overflow-y: hidden;
+        scroll-snap-type: proximity;
     }
 
     aside{
         width: 80%;
     }
+    aside h2{
+        font-size: 22px
+    }
+    aside form{
+        gap: 10px   ;
+    }
+    .precio-compra p {
+        font-size: 18px;
+    }
 } 
+
+@media (max-width: 400px) {
+    section div.img_main img{
+        width: 150px;
+        height: 150px;
+    }
+    section{
+        gap: 25px   ;
+    }
+    section ul.img_todas li img {
+        width: 60px;
+        height: 60px;
+    }
+    aside{
+        padding-top: 20px;
+    }
+    div.precio-compra{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 250px){
+    .precio-compra input {
+        font-size: 16px;
+
+    }
+    aside h2{
+        font-size: 16px;
+    }
+    aside p.descripcion{
+        height: 80px;
+        overflow: scroll;
+    }
+    .opt-container{
+        flex-direction: column;
+    }
+}

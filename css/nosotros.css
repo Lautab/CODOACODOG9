@@ -71,9 +71,15 @@ ul {
 	text-align: center;
 }
 
-/* #imagen img {
-    width: 250px;
-    height: 600px;
-    padding: 30px;
-    margin: 10px;
-} */
+@media (max-width: 320px) {
+	.carousel-container {
+		width: 100%;
+		min-width: fit-content;
+	}
+
+	.contenido-container {
+		width: 100%;
+		min-width: fit-content;
+	}
+}
+

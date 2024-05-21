@@ -50,8 +50,6 @@
 	box-sizing: border-box;
 }
 
-
-
 html {
 	height: 100%;
 	font-size: var(--font-base);
@@ -415,4 +413,11 @@ a:focus {
 		grid-template-columns: var(--footer-grid-cols);
 		gap: 20px;
 	}
+}
+
+@media (max-width: 320px) {
+	.footer__main div {
+		width: fit-content;
+	}
+
 }

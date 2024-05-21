@@ -1,45 +1,49 @@
-
-
-body {
-    padding: 0px;
-    background-color: white;   
-}
-   
-
-
 main {
-    background-color: whitesmoke;
-    background-position: center;
-    background-size: contain;
-    margin: 0px;
-    display:flex;
-    flex-direction: column;
+	background-color: whitesmoke;
+	background-position: center;
+	background-size: contain;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	height: max-content;
 }
 
-form {
-    padding: 20px 20px 20px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.turnosOnline {
+	padding: 0px 25px;
+	margin-bottom: 30vh;
+	margin-top: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
 }
 
+.turnosOnline form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #228adf;
+	position: relative;
+	padding: 20px;
+	gap: 5px;
+	font-size: 30px;
+	font-family: var(--font-family-mont);
+}
 
-
-.clinicaVeterinaria { 
-    font-family: var(--font-family-mont); 
-    background-position: center;
-    background-size: contain;
-    color: rgb(0, 0, 0); 
-    text-align: center; 
-    padding: 5px;
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.clinicaVeterinaria {
+	font-family: var(--font-family-mont);
+	background-position: center;
+	background-size: contain;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 5px;
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /*
@@ -47,212 +51,199 @@ form {
     --font-family-mont: "Montserrat", sans-serif;   
 */
 
-main h1{
-    font-family: var(--font-family-sans); 
-    color: #001f38;
-    text-align: center;
-    margin-top: 7vh;
-    margin-bottom: 5vh;
+.turnos-main h1 {
+	font-family: var(--font-family-sans);
+	color: #001f38;
+	text-align: center;
+	margin-top: 7vh;
+	margin-bottom: 5vh;
 }
 
-
-.info_turnos{
+.info_turnos {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	color: white;
-    padding: 0px 25px;
+	padding: 0px 25px;
 	margin: auto;
 }
-.info_turnos > p{
+.info_turnos > p {
 	padding: 15px 60px;
 	width: 100%;
 	background-color: #228adf;
 }
 
-.turnosOnline{
-    height: 400px;
-    padding: 0px 25px;
-    margin-bottom: 30vh;
-    margin-top: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.turnosOnline h2{
-    background-image: url(../assets/bo_fon.png);
-    background-size: cover;
-    height: 400px;
-    width: 40%;
-    font-family: var(--font-family-sans);
-    font-size: 40px;
-    color: #001f38;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.turnosOnline form{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #228adf;
-    height:100%;
-    width: 60%;
-    flex-direction: row;
-}
-
-.turnosOnline_form_uno{
-    display: flex;
-    width: 80%;
-    height: 90%;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 10px   ;
-}
-
-.turnosOnline_form_uno div{
-    font-size: 18px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.turnosOnline_form_uno label{
-    width: 20% ;
-}
-
-.turnosOnline_form_uno input{
-    background-color: white;
-    outline: none;
-    border: 1px solid #001f38;
-    font-family: var(--font-family-mont);
-    width: 40%;
-    padding: 10px;
-}
-
-.turnosOnline form{
-    font-family: var(--font-family-mont);
-}
-
-.turnosOnline_buttons{
-    width: 20%;
-    position: absolute;
-    right: -1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.button_border{
-    background-color: white;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.button_background{
-    background-color: #228adf;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button_border{
-    transition: 0.4s;
-}
-.button_border:hover{
-    transform: translateX(10px);
-}
-
-.buttons_dos{
+.turnosOnline h2 {
+	background-image: url(../assets/bo_fon.png);
+	background-size: cover;
+	height: 500px;
+	width: 60%;
+	font-family: var(--font-family-sans);
+	font-size: 40px;
+	color: #001f38;
 	display: flex;
-    flex-direction: column;
-    gap: 10px   ;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.turnosOnline_form_uno {
+	display: flex;
+	width: 80%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 10px;
+	padding-right: 3rem;
+}
+
+.turnosOnline_form_uno div {
+	font-size: 18px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.turnosOnline_form_uno label {
+	max-width: 80px;
+	width: 100%;
+}
+
+.turnosOnline_form_uno input {
+	background-color: white;
+	outline: none;
+	border: 1px solid #001f38;
+	font-family: var(--font-family-mont);
+	padding: 10px;
+	max-width: 350px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.turnosOnline_buttons {
+	width: 20%;
+	position: absolute;
+	right: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.button_border {
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button_background {
+	background-color: #228adf;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button_border {
+	transition: 0.4s;
+}
+.button_border:hover {
+	transform: translateX(10px);
+}
+
+.buttons_dos {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 @keyframes mostrar {
-    0%{
-        display: block;
-        display: flex;
-        filter: opacity(0);
-    }
-    100%{
-        filter: opacity(1);
-    }
+	0% {
+		display: block;
+		display: flex;
+		filter: opacity(0);
+	}
+	100% {
+		filter: opacity(1);
+	}
 }
 
 @keyframes ocultar {
-    0%{
-        filter: opacity(1);
-    }
-    100%{
-        filter: opacity(0);
-        display: none;
-    }
+	0% {
+		filter: opacity(1);
+	}
+	100% {
+		filter: opacity(0);
+		display: none;
+	}
 }
 
-
-main{
-    animation: mostrar 1s linear 0s 1 forwards normal;
+main {
+	animation: mostrar 1s linear 0s 1 forwards normal;
 }
-.turnosOnline_form_dos{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 90%;
-    gap: 10px;
-
+.turnosOnline_form_dos {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	gap: 10px;
+	padding-right: 3.5rem;
 }
-
-.turnosOnline_form_dos  div{
-    font-size: 18px;
-    color: white;
-    display: flex;
-    gap: 5px    ;
-    flex-direction: column;
-    justify-content: space-around;
+.turnosOnline_form_dos label {
+	display: flex;
+	width: 80px;
+	align-items: end;
+	justify-content: space-between;
 }
-
-.input_box_modificada{
-    padding: 10px;
-    font-family: var(--font-family-mont);
-    outline: none;
-}
-.input_box_modificada option{
-    padding: 10px;
+.turnosOnline_form_dos label input {
+	margin: 2px 0;
 }
 
-.turnosOnline_form_tres{
+.turnosOnline_form_dos div {
+	font-size: 18px;
+	color: white;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.input_box_modificada {
+	padding: 10px;
+	font-family: var(--font-family-mont);
+	outline: none;
+}
+.input_box_modificada option {
+	padding: 10px;
+}
+
+.turnosOnline_form_tres {
 	color: white;
 	width: 80%;
 	height: 80%;
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
-	justify-content: space-around;
-	padding-left: 50px;
 	gap: 20px;
+	padding-right: 2.5rem;
 }
 
 .turnosOnline_form_tres div {
 	font-size: 18px;
 }
 
-.titulo{
+.titulo {
 	font-weight: 500;
 	font-size: 20px;
 }
 
-.turnosOnline_form_tres div ul{
+.turnosOnline_form_tres div ul {
 	list-style-type: none;
 	margin-left: 10px;
 	display: flex;
@@ -261,27 +252,122 @@ main{
 	margin-top: 7px;
 }
 
-.mensaje_tres{
+.mensaje_tres {
 	font-size: 20px;
-	font-weight: 600px	;
+	font-weight: 600px;
 }
 
-.turnosOnline_form_cuatro{
+.turnosOnline_form_cuatro {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	color: white;
-	gap: 10px	;
+	gap: 10px;
 }
 
-.mostrar{
-    animation: mostrar 1s linear 0s 1 forwards normal;
-    display: flex;
+.mostrar {
+	animation: mostrar 1s linear 0s 1 forwards normal;
+	display: flex;
 }
-.ocultar{
-    animation: ocultar 1s linear 0s 1 forwards normal;
+.ocultar {
+	animation: ocultar 1s linear 0s 1 forwards normal;
 }
 
-.oculto{
+.oculto {
 	display: none;
+}
+
+@media (max-width: 768px) {
+	.info_turnos {
+		padding: 0;
+	}
+	.info_turnos p {
+		padding: 1.5rem;
+	}
+	.turnosOnline {
+		flex-direction: column;
+		padding: 0;
+	}
+	.turnosOnline h2 {
+		display: none;
+		padding: 0;
+	}
+	.turnosOnline p {
+		color: black;
+	}
+	.turnosOnline form {
+		background-image: url(../assets/bo_fon.png);
+		background-size: cover;
+	}
+
+	.turnosOnline_form_uno label {
+		color: black;
+	}
+
+	.turnosOnline_form_uno {
+		width: 100%;
+		padding: 1rem 0;
+	}
+
+	.turnosOnline_buttons {
+		position: static;
+		display: block;
+	}
+
+	.turnosOnline_form_dos {
+		width: 100%;
+		padding: 1rem 0;
+	}
+	.turnosOnline_form_dos h3 {
+		color: black;
+	}
+	.turnosOnline_form_dos label {
+		color: black;
+	}
+	.turnosOnline_form_tres {
+		width: 100%;
+		padding: 1rem 0;
+	}
+	.turnosOnline_form_tres h3 {
+		color: black;
+	}
+	.turnosOnline_form_tres ul {
+		color: black;
+	}
+
+	.turnosOnline_form_cuatro h3 {
+		color: black;
+	}
+}
+
+@media (max-width: 500px) {
+	.turnosOnline_form_uno div {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.turnosOnline form {
+		flex-direction: column;
+		padding: 0.8rem;
+	}
+
+	.turnosOnline_form_uno label {
+		text-align: start;
+	}
+	.turnosOnline_form_uno input {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.turnosOnline_form_dos {
+		width: 100%;
+	}
+	.buttons_dos {
+		flex-direction: row-reverse;
+		justify-content: center;
+	}
+
+	.turnosOnline_form_tres {
+		width: 100%;
+	}
 }

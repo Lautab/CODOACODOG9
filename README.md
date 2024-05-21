@@ -2,6 +2,8 @@
 
 ## <ul align="center"> <picture><img  src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width=50px></picture> Tema: Página Veterinaria 😈🤝</ul>
 
+#### Veterinaria Web que ofrece productos y servicios al público en general.
+
 <picture>
     <img align="right" alt="GIF" height="320px" src="https://media.giphy.com/media/Ah3zHH7hvsSB2/giphy.gif?raw=true" />
 </picture>
@@ -18,7 +20,7 @@ Inicio, Turnos, Nosotros, Detalles
 
 ## 😫 Opcional: 
 
-Login, Carrito ( Si se puede )
+Login, Carrito, Registro ( Si se puede )
 
 
 

@@ -68,7 +68,7 @@
 }
 
 .home__newsletter {
-    padding: 60px 4px;
+	padding: 60px 4px;
 	background-color: #004680;
 	color: white;
 }
@@ -81,26 +81,25 @@
 }
 
 .newsletter__container > span {
-    text-transform: uppercase;
-    font-weight: lighter;
-    font-size: 14px;
-    margin-bottom: 24px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 14px;
+	margin-bottom: 24px;
 }
 
 .newsletter__container > h1 {
-    font-weight: bold;
-    font-size: 32px;
-    letter-spacing: 2px;
-    margin-bottom: 24px;
-    text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+	letter-spacing: 2px;
+	margin-bottom: 24px;
+	text-align: center;
 }
 
 .newsletter__container > p {
-    font-size: 14px;
-    margin-bottom: 36px;
-    text-align: center;
+	font-size: 14px;
+	margin-bottom: 36px;
+	text-align: center;
 }
-
 
 .section-products {
 	display: flex;
@@ -112,7 +111,6 @@
 .card-container {
 	padding: 4px;
 }
-
 
 .card-main {
 	margin: 0 auto;
@@ -136,7 +134,7 @@
 	width: 100%;
 	background-color: white;
 	object-fit: contain;
-	border-radius:0 60px 0 60px;
+	border-radius: 0 60px 0 60px;
 }
 
 .body-card {
@@ -183,13 +181,17 @@
 	padding: 12px;
 	border-radius: 10px;
 	background-color: #000000;
-	border: none;
+	border: 2px solid white;
 	text-decoration: none;
 	color: #dfdbdb;
+	cursor: pointer;
+	transition: all 0.5s ease;
 }
 
-.footer-card a:hover {
-	opacity: 75%;
+.footer-card button:hover {
+	color: black;
+	background: white;
+	border: 2px solid rgb(100, 99, 99);
 }
 
 @media (max-width: 768px) {

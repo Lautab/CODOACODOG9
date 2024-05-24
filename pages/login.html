@@ -62,24 +62,28 @@
 
 
     <main class="login-main">
-        <div class="Login">
-        <h1>Inicio de Sesion</h1>
-        <form action="post">
-            <div class="Username">
-                <input type="text" required>
-                <label for="Nombre de Usuario">Nombre de Usuario</label>
-            </div>
-            <div class="Contraseña">
-                <input type="password" required>
-                <label for="Contraseña">Contraseña</label>
-            </div>
-            <div class="recordar">Olvide mi Contraseña</div>
-            <input type="submit" value="Iniciar">
-            <div class="Crear Cuenta">
-                Quiero crear mi <a href="#">Cuenta</a>
-            </div>
+        <div class="login">
+            <h1>Inicio de Sesion</h1>
+            <form action="post">
+                <div class="username">
+                    <input type="text" required placeholder="Nombre de Usuario">
+
+                </div>
+                <div class="contraseña">
+                    <input type="password" required placeholder="Contraseña">
+
+                </div>
+                <div class="recordar-container">
+                    <input type="checkbox" id="recordar"><label for="recordar">Recordar</label>
+                </div>
+                <button type="submit">Iniciar</button>
+                <div class="crear-cuenta">
+                    Quiero crear mi
+                    <a href="#">Cuenta</a><br>
+                    <a href="#">Olvide mi Contraseña</a>
+                </div>
+            </form>
         </div>
-        </form>
 
 
 

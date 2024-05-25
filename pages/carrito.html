@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -61,8 +61,35 @@
     </header>
 
 
-    <main class="cart-main">
-        <h1>Cart</h1>
+    <main>
+        <section id="productos_container"  class="productos-carrito">
+            <h1>Productos en carrito</h1>
+        </section>
+          
+          <form class="checkout" id="carritoForm">
+            <h1>Checkout</h1>
+            <h3 class="pagos-titulo">Total a Pagar</h3>
+            <div class="card-check">
+              <ul id="checkout_container">
+
+              </ul>
+              <h4 class="total">Total <span id="totalPagar">$0</span></h4>
+            </div>
+            <h3 class="pagos-titulo">Forma de Pago</h3>
+            <div class="pagos">
+              <label>
+                    <img src="../assets/efectivoICON.png" alt="Efectivo">
+                Efectivo
+                <input value="Efectivo" checked type="checkbox" name="pago">
+              </label>
+              <label>
+                <img src="../assets/mercadopagoICON.png" alt="MercadoPago">
+                Mercado Pago
+                <input value="Mercado Pago" type="checkbox" name="pago">
+              </label>
+            </div>
+            <a href='./pago.html' id="botonPagar" class="but-check">IR A PAGAR</a>
+          </form>
     </main>
 
 
@@ -129,6 +156,7 @@
     </footer>
 
     <script src="../js/global.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 
 

@@ -159,7 +159,8 @@ async function cargar_datos() {
         e.preventDefault()
         const data = new FormData(e.target);
         const dataObject = Object.fromEntries(data.entries());
-
+        dataObject["cantidad"] = 1
+        dataObject['id'] = Math.floor(Math.random()) * 10000
         dataCookie = JSON.stringify(dataObject)
         
         //Obtener datos de las cookies
@@ -175,8 +176,7 @@ async function cargar_datos() {
         }else{
             console.warn('Error ')
         }
-        setCookie('carrito', carrito, {secure:true})
-        console.log(getCookie('carrito'));
+        setCookie('carrito', carrito, {secure:true, 'max-age': 20000000})
 
         // COMO VOLVER A OBTENER LOS DATOS
         // JSON.parse(`{${getCookie('carrito')}}`)

@@ -24,7 +24,7 @@
         "titulo": "Alimento para Perro",
         "name": "Alimento Dog Selection Criadores",
         "desc": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Dog Selection podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "opt": {"kg": [1.5,15,21,24], "sabor":["Carne/Pollo", "Carne/Vegetales", "Mix"]},
+        "opt": {"kg": ["1.5 Kg","15 Kg","21 Kg","24 Kg"], "sabor":["Carne/Pollo", "Carne/Vegetales", "Mix"]},
         "price": ["3.400","20.700","30.050","41.020"],
         "img":["comidaPerro.png","comidaPerro2.png","comidaPerro3.png"],
         "category": "Alimento"
@@ -34,7 +34,7 @@
         "titulo": "Alimento para Gato",
         "name": "Alimento Cat Chow Defense Plus Multiproteína",
         "desc": "Dale a tu gato adulto la nutrición que necesita con el alimento Cat Chow Defense Plus Multiproteína sabor carne en bolsa de 8 kg. Este alimento seco de Purina está especialmente formulado para satisfacer las necesidades de tu mascota en su etapa adulta.",
-        "opt": {"kg": [8, 15], "sabor":["Carne", "Pescado", "Pollo"]},
+        "opt": {"kg": ["8 Kg", "15 Kg"], "sabor":["Carne", "Pescado", "Pollo"]},
         "price": ["30.210","50.040"],
         "img":["comidaGato.png","comidaGato2.png"],
         "category": "Alimento"

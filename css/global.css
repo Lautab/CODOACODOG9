@@ -88,7 +88,7 @@ body {
 }
 
 main {
-	animation: mostrar 1s linear 0s 1 forwards normal;
+	animation: mostrar .5s linear 0s 1 forwards normal;
 	flex-grow: 1;
 }
 
@@ -418,6 +418,9 @@ a:focus {
 @media (max-width: 320px) {
 	.footer__main div {
 		width: fit-content;
+	}
+	.footer__title{
+		font-size: 16px;
 	}
 
 }
